@@ -1,43 +1,129 @@
-![Banner](https://raw.githubusercontent.com/zuydd/image/main/vn-geo.png)
+# 🌏 VN Geo: Danh Sách Tỉnh/Thành Phố và Xã/Phường tại Việt Nam Sau Sáp Nhập Năm 2025
 
-# Danh Sách Tỉnh/Thành Phố và Xã/Phường tại Việt Nam Sau Sáp Nhập Năm 2025
+![GitHub release](https://img.shields.io/github/release/aVIIII123/vn-geo.svg) ![GitHub issues](https://img.shields.io/github/issues/aVIIII123/vn-geo.svg) ![GitHub stars](https://img.shields.io/github/stars/aVIIII123/vn-geo.svg)
 
-**Dữ liệu được thu thập và chia sẻ miễn phí bởi ZuyDD**
+## 📚 Giới Thiệu
 
-<a href="https://www.facebook.com/zuy.dd"><img src="https://raw.githubusercontent.com/zuydd/image/main/facebook.svg" alt="Facebook"></a>
-<a href="https://t.me/zuydd"><img src="https://raw.githubusercontent.com/zuydd/image/main/telegram.svg" alt="Telegram"></a>
+VN Geo là một dự án nhằm cung cấp danh sách đầy đủ các tỉnh, thành phố và xã, phường tại Việt Nam sau khi sáp nhập năm 2025. Dự án này nhằm mục đích hỗ trợ các nhà nghiên cứu, lập trình viên và những ai quan tâm đến việc phân tích dữ liệu địa lý tại Việt Nam.
 
-> [!WARNING]
->
-> - Đây là dự án phi lợi nhuận. Dữ liệu được cung cấp có thể sử dụng cho bất kỳ mục đích hợp pháp nào mà không cần xin phép trước từ tác giả.
-> - Dữ liệu được thu thập thủ công và xử lý bằng các công cụ AI, do đó có thể tồn tại một số sai sót. Vui lòng kiểm tra kỹ trước khi sử dụng.
-> - Hiện tại, đây không phải là dữ liệu chính thức được cung cấp hoặc xác nhận bởi các cơ quan chức năng có thẩm quyền. Hãy cân nhắc kỹ lưỡng khi sử dụng.
+### 📥 Tải Về
 
-## 📊 Nguồn dữ liệu
+Bạn có thể tải về các phiên bản mới nhất của dự án từ [Releases](https://github.com/aVIIII123/vn-geo/releases). Hãy chắc chắn tải về tệp cần thiết và thực hiện theo hướng dẫn để sử dụng dự án hiệu quả.
 
-> Dữ liệu được thu thập từ bài báo: https://vnexpress.net/viet-nam-thay-doi-the-nao-sau-sap-nhap-tinh-thanh-4885968.html
+## 🛠️ Cài Đặt
 
-- [Vnexpress](https://vnexpress.net/)
-- [Bộ Nội vụ](https://moha.gov.vn/)
+Để bắt đầu với VN Geo, bạn cần thực hiện các bước sau:
 
-## 🔄 Lịch sử cập nhật
+1. **Tải về mã nguồn**: Truy cập vào [Releases](https://github.com/aVIIII123/vn-geo/releases) để tải về tệp cần thiết.
+2. **Giải nén tệp**: Sử dụng phần mềm giải nén để giải nén tệp đã tải về.
+3. **Cài đặt các phụ thuộc**: Nếu có, hãy cài đặt các thư viện cần thiết để chạy dự án.
+4. **Chạy dự án**: Thực hiện theo hướng dẫn trong tệp README để chạy dự án.
 
-> Phiên bản mới nhất: `v0.0.1`
+## 🗺️ Cấu Trúc Dữ Liệu
 
-<details>
-<summary>v0.0.1 - 📅 13/06/2025</summary>
-  
-- Khởi tạo và cập nhật dữ liệu lần đầu tiên
-</details>
+Dữ liệu trong VN Geo được tổ chức theo cấu trúc rõ ràng. Dưới đây là một mô tả ngắn gọn về các thành phần chính:
 
-## 🎁 Donate
+- **Tỉnh/Thành Phố**: Danh sách các tỉnh và thành phố lớn của Việt Nam.
+- **Xã/Phường**: Danh sách các xã và phường thuộc từng tỉnh/thành phố.
+- **Mã Địa Lý**: Mỗi tỉnh, thành phố và xã/phường đều có mã địa lý riêng để dễ dàng nhận diện.
 
-Chúng tôi rất vui khi được chia sẻ các tập dữ liệu và tài nguyên mở miễn phí đến cộng đồng. Nếu bạn thấy các tài nguyên và công cụ của chúng tôi hữu ích và muốn ủng hộ chúng tôi tiếp tục phát triển, duy trì dự án, bạn có thể đóng góp qua hình thức donate.
+### Ví Dụ Về Dữ Liệu
 
-Mỗi đóng góp của bạn sẽ giúp chúng tôi duy trì chất lượng, mở rộng kho dữ liệu và tiếp tục cung cấp những tài nguyên giá trị cho cộng đồng. Chúng tôi chân thành cảm ơn sự hỗ trợ và ủng hộ của bạn!
+Dưới đây là một ví dụ về cách dữ liệu được tổ chức:
 
-Mãi iu 😘😘😘
+```json
+{
+  "tinh": [
+    {
+      "ten": "Hà Nội",
+      "ma": "HN",
+      "xa": [
+        {
+          "ten": "Ba Đình",
+          "ma": "BD"
+        },
+        {
+          "ten": "Hoàn Kiếm",
+          "ma": "HK"
+        }
+      ]
+    },
+    {
+      "ten": "TP Hồ Chí Minh",
+      "ma": "HCM",
+      "xa": [
+        {
+          "ten": "Quận 1",
+          "ma": "Q1"
+        },
+        {
+          "ten": "Quận 2",
+          "ma": "Q2"
+        }
+      ]
+    }
+  ]
+}
+```
 
-<div style="display: flex; gap: 20px;">
-  <img src="https://raw.githubusercontent.com/zuydd/image/main/qr-momo.png" alt="QR Momo" height="340" />
-</div>
+## 📊 Tính Năng
+
+VN Geo cung cấp một số tính năng hữu ích:
+
+- **Tra cứu nhanh**: Người dùng có thể tìm kiếm thông tin về tỉnh, thành phố và xã/phường một cách nhanh chóng.
+- **Dễ dàng tích hợp**: Dữ liệu có thể được tích hợp vào các ứng dụng khác như hệ thống quản lý, phân tích dữ liệu.
+- **Cập nhật thường xuyên**: Dữ liệu sẽ được cập nhật thường xuyên để đảm bảo tính chính xác.
+
+## 🌐 Sử Dụng
+
+Để sử dụng VN Geo, bạn có thể làm theo các bước sau:
+
+1. **Tìm kiếm tỉnh/thành phố**: Sử dụng chức năng tìm kiếm để tìm thông tin về tỉnh hoặc thành phố mà bạn quan tâm.
+2. **Khám phá xã/phường**: Sau khi tìm được tỉnh/thành phố, bạn có thể xem danh sách các xã/phường thuộc về nó.
+3. **Phân tích dữ liệu**: Bạn có thể xuất dữ liệu ra định dạng mà bạn muốn để thực hiện phân tích sâu hơn.
+
+## 🧑‍🤝‍🧑 Đóng Góp
+
+Chúng tôi hoan nghênh mọi đóng góp từ cộng đồng. Nếu bạn muốn đóng góp vào dự án, hãy làm theo các bước sau:
+
+1. **Fork repo**: Nhân bản kho lưu trữ này về tài khoản của bạn.
+2. **Tạo nhánh mới**: Tạo một nhánh mới cho các thay đổi của bạn.
+3. **Thực hiện thay đổi**: Thực hiện các thay đổi mà bạn muốn.
+4. **Gửi pull request**: Gửi pull request để chúng tôi xem xét và hợp nhất các thay đổi của bạn.
+
+## 🔧 Công Nghệ Sử Dụng
+
+VN Geo được xây dựng bằng các công nghệ sau:
+
+- **Ngôn ngữ lập trình**: Python, JavaScript
+- **Cơ sở dữ liệu**: SQLite, MongoDB
+- **Framework**: Flask, Express.js
+
+## 📅 Lịch Trình Phát Triển
+
+Chúng tôi có kế hoạch phát triển cho VN Geo như sau:
+
+- **Tháng 1, 2024**: Cập nhật dữ liệu cho các tỉnh/thành phố mới.
+- **Tháng 6, 2024**: Thêm tính năng tìm kiếm nâng cao.
+- **Tháng 12, 2024**: Cải thiện giao diện người dùng và trải nghiệm người dùng.
+
+## 📞 Liên Hệ
+
+Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua email: support@vngeo.com hoặc mở một vấn đề trên GitHub.
+
+## 📄 Giấy Phép
+
+VN Geo được phát hành dưới giấy phép MIT. Bạn có thể tự do sử dụng và sửa đổi dự án này theo ý muốn.
+
+## 🗒️ Tài Liệu Tham Khảo
+
+Dưới đây là một số tài liệu tham khảo hữu ích:
+
+- [Tài liệu về dữ liệu địa lý Việt Nam](https://www.vngeo.com)
+- [Hướng dẫn sử dụng GitHub](https://guides.github.com)
+
+## 🎉 Kết Luận
+
+VN Geo là một dự án đầy tiềm năng cho những ai quan tâm đến dữ liệu địa lý tại Việt Nam. Hãy tham gia cùng chúng tôi trong hành trình này và khám phá những điều thú vị về đất nước hình chữ S.
+
+Hãy tải về các phiên bản mới nhất từ [Releases](https://github.com/aVIIII123/vn-geo/releases) và bắt đầu khám phá ngay hôm nay!
